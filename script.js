@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // معالجة زر "اطلب الآن" في بطاقات المنتجات
-  // نحصل على كل الأزرار ذات الفئة small داخل بطاقات المنتجات، وعند النقر عليها
-  // نُظهر صندوقًا منبثقًا يحتوي على رسالة حول توفر المنتجات قريبًا.
-  const orderButtons = document.querySelectorAll('.product-card .btn.small');
+  // نحصل على كل أزرار الطلب التي تحمل الفئة order-now-btn. استخدمنا عناصر button
+  // لتجنب إعادة تحميل الصفحة عند النقر، وبالتالي فإن هذا الاختيار أكثر وضوحًا.
+  const orderButtons = document.querySelectorAll('.order-now-btn');
   const orderModal = document.getElementById('order-modal');
   const closeOrderModalBtn = document.getElementById('close-order-modal');
 
