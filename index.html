@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dukhoun | دخون</title>
+  <!-- Fonts and styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Ionicons for icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <!-- Header with navigation -->
+  <header>
+    <div class="container">
+      <!-- Logo image instead of text -->
+      <h1 class="logo">
+        <img src="assets/logo.png" alt="Dukhoun logo" class="logo-image">
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#hero">الرئيسية</a></li>
+          <li><a href="#about">عن دخون</a></li>
+          <li><a href="#products">منتجاتنا</a></li>
+          <li><a href="#contact">اتصل بنا</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h2>اكتشف روائحنا الفاخرة</h2>
+      <p>عود، بخور، مسك – جودة تُلامس الحواس</p>
+      <a href="#products" class="btn">تسوق الآن</a>
+    </div>
+  </section>
+
+  <!-- About section -->
+  <section id="about">
+    <div class="container">
+      <h2>عن دخون</h2>
+      <p>تأسست دخون لتجلب لك أرقى العطور الشرقية. نحن نُعنى بتقديم أجود أنواع العود الطبيعي والبخور الفاخر والمسك النقي، ونختار منتجاتنا بعناية لضمان تجربة حسية لا تُنسى. يجمع فريقنا بين الخبرة التقليدية والرؤية الحديثة لنقدم لك روائح تعبّر عن الفخامة والرقي.</p>
+    </div>
+  </section>
+
+  <!-- Products section -->
+  <section id="products">
+    <div class="container">
+      <h2>منتجاتنا</h2>
+      <div class="products-grid">
+        <!-- Oud product -->
+        <div class="product-card">
+          <div class="product-image" style="background-image: url('assets/oud.jpg');"></div>
+          <div class="product-content">
+            <div class="icon"><ion-icon name="leaf-outline"></ion-icon></div>
+            <h3>عود</h3>
+            <p>قطع من العود الطبيعي المختار بعناية ليمنحك عبقاً ثرياً ودافئاً يدوم طويلاً.</p>
+            <a href="#" class="btn small">اطلب الآن</a>
+          </div>
+        </div>
+        <!-- Incense product -->
+        <div class="product-card">
+          <div class="product-image" style="background-image: url('assets/incense.jpg');"></div>
+          <div class="product-content">
+            <div class="icon"><ion-icon name="flame-outline"></ion-icon></div>
+            <h3>بخور</h3>
+            <p>بخور فاخر ينبعث منه دخان عطري ناعم يملأ الأجواء بالسكينة والصفاء.</p>
+            <a href="#" class="btn small">اطلب الآن</a>
+          </div>
+        </div>
+        <!-- Musk product -->
+        <div class="product-card">
+          <div class="product-image" style="background-image: url('assets/musk.jpg');"></div>
+          <div class="product-content">
+            <div class="icon"><ion-icon name="droplet-outline"></ion-icon></div>
+            <h3>مسك</h3>
+            <p>مسك أصيل بنفحات عميقة ورقيقة يضفي لمسة من الرقي على حضورك.</p>
+            <a href="#" class="btn small">اطلب الآن</a>
+          </div>
+        </div>
+
+        <!-- Candles product -->
+        <div class="product-card">
+          <div class="product-image" style="background-image: url('assets/candles.jpg');"></div>
+          <div class="product-content">
+            <!-- Use filled flame icon to represent candles -->
+            <div class="icon"><ion-icon name="flame"></ion-icon></div>
+            <h3>شمع</h3>
+            <p>شموع معطرة فاخرة تضفي دفئاً وأجواء مميزة على مناسباتك وحياتك اليومية.</p>
+            <a href="#" class="btn small">اطلب الآن</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact">
+    <div class="container">
+      <h2>اتصل بنا</h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <p><strong>العنوان:</strong> مَادَبَا، الأردن</p>
+          <p><strong>الهاتف:</strong> ‎+962-7-xxxx-xxxx</p>
+          <p><strong>البريد الإلكتروني:</strong> info@dukhoun.com</p>
+        </div>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">الاسم</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">رسالتك</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn">إرسال</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p id="copyright"></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
